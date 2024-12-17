@@ -40,6 +40,7 @@ function setup(){
         let particle = new particles.Sprite()
         particle.x = floor(random(30, 30*14))
         particle.y = floor(random(30, 30*13))
+        particle.speed = random(0,5)
     }
 }
 
