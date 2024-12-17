@@ -1,6 +1,7 @@
 let walls, particles
 const tileSize = 30
 function setup(){
+    createCanvas(windowWidth, windowHeight)
     walls = new Group()
     walls.h = tileSize
     walls.w = tileSize
@@ -40,4 +41,11 @@ function setup(){
         particle.x = floor(random(30, 30*14))
         particle.y = floor(random(30, 30*13))
     }
+}
+
+function draw(){
+    clear()
+    background(255)
+    walls.draw()
+    particles.draw()
 }
